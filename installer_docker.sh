@@ -5,6 +5,10 @@ apt install -y git
 apt install -y python3-pip
 apt install -y nginx
 
+#fetch the nginx server files and store it in /etc/nginx/conf.d
+curl https://raw.githubusercontent.com/NeelRanka/dockerScripts/main/installer_docker.sh > /etc/nginx/conf.d/server.conf
+
+
 # configure the nginx server / copy the server1 config
 # copy the flask servers
 
@@ -80,7 +84,6 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 
 
 #start nginx server
-# fetch nginx config files from github and place it in /etc/nginx/conf.d/
 # service nginx start 
 
 
