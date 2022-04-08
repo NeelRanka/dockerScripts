@@ -50,25 +50,25 @@ go install github.com/tomnomnom/waybackurls@latest
 
 #webscreenshot
 #phantomjs
-echo "[+]installing webscreenshot"
-apt install -y phantomjs
-pip3 install webscreenshot
+# echo "[+]installing webscreenshot"
+# apt install -y phantomjs
+# pip3 install webscreenshot
 
 
 #gf / gf-patterns
-# echo "[+]installing gf/gfpatterns"
-# go install github.com/tomnomnom/gf@latest
-# rm -rf ./Gf-Patterns
-# rm -rf ~/.gf
-# git clone https://github.com/1ndianl33t/Gf-Patterns
-# mkdir ~/.gf
-# mv ./Gf-Patterns/*.json ~/.gf
+echo "[+]installing gf/gfpatterns"
+go install github.com/tomnomnom/gf@latest
+rm -rf ./Gf-Patterns
+rm -rf ~/.gf
+git clone https://github.com/1ndianl33t/Gf-Patterns
+mkdir ~/.gf
+mv ./Gf-Patterns/*.json ~/.gf
 
 
 #gowitness => webscreenshot for chromeheadless and in golang
 #needs google-chrome to be installed
 # google-chrome installation steps
-go install github.com/sensepost/gowitness@latest
+#go install github.com/sensepost/gowitness@latest
 
 #usage 
 # gowitness file -f <path> -P <outputDir>
@@ -79,4 +79,13 @@ go install github.com/sensepost/gowitness@latest
 go install github.com/lc/gau/v2/cmd/gau@latest
 
 
-#start the flask servers
+#start nginx server
+# fetch nginx config files from github and place it in /etc/nginx/conf.d/
+# service nginx start 
+
+
+
+#start the flask server
+# move the app to a particular workdir
+# run the python3 - http.server in $workdir/Websites/
+# now run the application
