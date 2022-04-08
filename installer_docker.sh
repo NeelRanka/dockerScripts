@@ -9,9 +9,8 @@ apt install -y nginx
 curl https://raw.githubusercontent.com/NeelRanka/dockerScripts/main/server2.conf > /etc/nginx/conf.d/server.conf
 
 
-# configure the nginx server / copy the server1 config
 # copy the flask servers
-
+pip3 install flask
 
 #assetfinder
 echo "[+]installing assetfinder"
@@ -84,11 +83,11 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 
 
 #start nginx server
-# service nginx start 
+service nginx start 
 
-
+git clone https://github.com/NeelRanka/dockerFlask.git
 
 #start the flask server
 # move the app to a particular workdir
-# run the python3 - http.server in $workdir/Websites/
+python3 -m http.server -d /home/dockerFlask/Websites
 # now run the application
