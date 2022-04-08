@@ -6,7 +6,7 @@ apt install -y python3-pip
 apt install -y nginx
 
 #fetch the nginx server files and store it in /etc/nginx/conf.d
-curl https://raw.githubusercontent.com/NeelRanka/dockerScripts/main/installer_docker.sh > /etc/nginx/conf.d/server.conf
+curl https://raw.githubusercontent.com/NeelRanka/dockerScripts/main/server2.conf > /etc/nginx/conf.d/server.conf
 
 
 # configure the nginx server / copy the server1 config
