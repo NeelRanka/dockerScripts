@@ -92,6 +92,7 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 
 #start nginx server
 service nginx start 
+echo "Done starting nginx"
 
 # git clone https://github.com/NeelRanka/AF1_1.git
 # echo "Done cloning AF1_1"
