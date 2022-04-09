@@ -1,12 +1,19 @@
 #!/usr/bin/bash
 
+echo "updating repos"
 apt update
+
+echo "installing apt-utils"
 apt install -y apt-utils
+echo "installing git"
 apt install -y git
+echo "installing pip3"
 apt install -y python3-pip
+echo "installing nginx"
 apt install -y nginx
 
 #fetch the nginx server files and store it in /etc/nginx/conf.d
+echo "making nginx config"
 curl https://raw.githubusercontent.com/NeelRanka/dockerScripts/main/server2.conf > /etc/nginx/conf.d/server.conf
 
 
