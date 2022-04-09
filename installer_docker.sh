@@ -3,8 +3,8 @@
 echo "updating repos"
 apt update
 
-echo "installing apt-utils"
-apt install -y apt-utils
+#echo "installing apt-utils"
+#apt install -y apt-utils
 echo "installing git"
 apt install -y git
 echo "installing pip3"
@@ -90,13 +90,5 @@ mv ./Gf-Patterns/*.json ~/.gf
 go install github.com/lc/gau/v2/cmd/gau@latest
 
 
-#start nginx server
-service nginx start 
-echo "Done starting nginx"
-
-# git clone https://github.com/NeelRanka/AF1_1.git
-# echo "Done cloning AF1_1"
-
-#start the flask server
-# move the app to a particular workdir
-# now run the application
+git clone https://github.com/NeelRanka/AF1_1.git
+echo "Done cloning AF1_1"
