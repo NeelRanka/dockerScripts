@@ -94,8 +94,11 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 service nginx start 
 
 # git clone https://github.com/NeelRanka/AF1_1.git
+echo "Done cloning AF1_1"
 
 #start the flask server
 # move the app to a particular workdir
+echo "starting http.server"
 python3 -m http.server -d /home/AF1_1/Websites
+echo "started application"
 # now run the application
