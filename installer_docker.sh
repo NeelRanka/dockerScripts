@@ -92,3 +92,7 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 
 git clone https://github.com/NeelRanka/AF1_1.git
 echo "Done cloning AF1_1"
+
+echo "importing starter script"
+curl https://raw.githubusercontent.com/NeelRanka/dockerScripts/main/start.sh > start.sh
+echo "imported the start script start.sh"
