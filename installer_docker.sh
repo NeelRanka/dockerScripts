@@ -85,9 +85,9 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 #start nginx server
 service nginx start 
 
-git clone https://github.com/NeelRanka/dockerFlask.git
+git clone https://github.com/NeelRanka/AF1_1.git
 
 #start the flask server
 # move the app to a particular workdir
-python3 -m http.server -d /home/dockerFlask/Websites
+python3 -m http.server -d /home/AF1_1/Websites
 # now run the application
