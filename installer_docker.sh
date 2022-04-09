@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 apt update
+apt install -y apt-utils
 apt install -y git
 apt install -y python3-pip
 apt install -y nginx
