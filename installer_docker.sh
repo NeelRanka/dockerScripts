@@ -19,6 +19,7 @@ curl https://raw.githubusercontent.com/NeelRanka/dockerScripts/main/server2.conf
 
 # copy the flask servers
 pip3 install flask
+pip3 install uro
 
 #assetfinder
 echo "[+]installing assetfinder"
