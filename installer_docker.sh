@@ -84,7 +84,16 @@ mkdir ~/.gf
 mv ./myPatterns/*.json ~/.gf
 
 
+#wafw00f install
+echo "https://github.com/EnableSecurity/wafw00f.git[+] installing WafW00f"
+git clone https://github.com/EnableSecurity/wafw00f.git
+cd wafw00f
+python3 setup.py install
+cd ..
+
+
 #gau 
+echo "[+] installing gau"
 go install github.com/lc/gau/v2/cmd/gau@latest
 
 
