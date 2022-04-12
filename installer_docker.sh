@@ -76,6 +76,7 @@ go install github.com/tomnomnom/gf@latest
 # mkdir ~/.gf
 # mv ./Gf-Patterns/*.json ~/.gf
 
+# my extension of gf-patterns
 rm -rf ./myPatterns
 rm -rf ~/.gf
 git clone https://github.com/NeelRanka/myPatterns.git
