@@ -70,21 +70,17 @@ go install github.com/tomnomnom/waybackurls@latest
 #gf / gf-patterns
 echo "[+]installing gf/gfpatterns"
 go install github.com/tomnomnom/gf@latest
-rm -rf ./Gf-Patterns
+# rm -rf ./Gf-Patterns
+# rm -rf ~/.gf
+# git clone https://github.com/1ndianl33t/Gf-Patterns
+# mkdir ~/.gf
+# mv ./Gf-Patterns/*.json ~/.gf
+
+rm -rf ./myPatterns
 rm -rf ~/.gf
-git clone https://github.com/1ndianl33t/Gf-Patterns
+git clone https://github.com/NeelRanka/myPatterns.git
 mkdir ~/.gf
-mv ./Gf-Patterns/*.json ~/.gf
-
-
-#gowitness => webscreenshot for chromeheadless and in golang
-#needs google-chrome to be installed
-# google-chrome installation steps
-#go install github.com/sensepost/gowitness@latest
-
-#usage 
-# gowitness file -f <path> -P <outputDir>
-
+mv ./myPatterns/*.json ~/.gf
 
 
 #gau 
