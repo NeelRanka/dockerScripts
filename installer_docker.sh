@@ -59,6 +59,8 @@ go install github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 echo "[+]installing waybackurl"
 go install github.com/tomnomnom/waybackurls@latest
 
+echo "[+]installing anew"
+go install -v github.com/tomnomnom/anew@latest
 
 #webscreenshot
 #phantomjs
