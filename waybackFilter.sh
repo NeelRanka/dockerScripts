@@ -13,19 +13,21 @@ then
 	exit 1
 fi
 
+folderName="filtered_Wayback_Results/"
+mkdir -p $basePath$folderName
 
 for type in $list
 do
         echo $type
-	gf $type $basePath$ipfilename | uniq > $basePath$type$".txt"
+	gf $type $"'"$basePath$ipfilename$"'" | uniq > $"'"$basePath$folderName$type$".txt"$"'"
 done
 
 
 # store these at a proper location and merge with the original subdomains (anew/uniq)
 echo "[] Grathering subdomains"
-cat $path | cut -d'/' -f3 | cut -d':' -f1 | sed 's/^\(\|s\):\/\///g' | uniq > /home/neel/waybackOP/subDomains.txt
+cat $"'"$basePath$ipfilename$"'" | cut -d'/' -f3 | cut -d':' -f1 | sed 's/^\(\|s\):\/\///g' | uniq > $"'"$basePath$folderName$"subDomains.txt"$"'"
 
 echo
 echo "[] Grathering paths for directory brute-force"
 
-cat $path | rev | cut -d '/' -f 1 | rev | sed 's/^\(\|s\):\/\///g' | sed '/=\|.js\|.gif\|.css\|.jpeg\|.png\|:\|%/d' | uniq > /home/neel/waybackOP/wordlist.txt
+cat $"'"$basePath$ipfilename$"'" | rev | cut -d '/' -f 1 | rev | sed 's/^\(\|s\):\/\///g' | sed '/=\|.js\|.gif\|.css\|.jpeg\|.png\|:\|%/d' | uniq > $"'"$basePath$folderName$"bruteforce_list.txt"$"'"
