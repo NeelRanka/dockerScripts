@@ -115,6 +115,9 @@ curl https://raw.githubusercontent.com/NeelRanka/dockerScripts/main/waybackFilte
 cd ../
 
 
+#exiting AF1_1
+cd ../
+
 echo "importing starter script"
 curl https://raw.githubusercontent.com/NeelRanka/dockerScripts/main/start.sh > start.sh
 echo "imported the start script start.sh"
