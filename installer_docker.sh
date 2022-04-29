@@ -89,6 +89,13 @@ mv ./myPatterns/*.json ~/.gf
 echo "[+] installing gau"
 go install github.com/lc/gau/v2/cmd/gau@latest
 
+#installing node and dependencies
+curl -sL https://deb.nodesource.com/setup_current.x | bash
+apt install nodejs
+npm install -g puppeteer wappalyzer
+apt install --no-install-recommends --no-install-suggests chromium
+
+
 
 git clone https://github.com/NeelRanka/AF1_1.git
 echo "Done cloning AF1_1"
