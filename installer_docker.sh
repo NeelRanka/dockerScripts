@@ -6,11 +6,11 @@ apt update
 #echo "installing apt-utils"
 #apt install -y apt-utils
 echo "installing git"
-apt install -y git
+apt install --no-install-recommends  --no-install-suggests -y git
 echo "installing pip3"
-apt install -y python3-pip
+apt install --no-install-recommends  --no-install-suggests -y python3-pip
 echo "installing nginx"
-apt install -y nginx
+apt install --no-install-recommends  --no-install-suggests -y nginx
 
 #fetch the nginx server files and store it in /etc/nginx/conf.d
 echo "making nginx config"
@@ -51,7 +51,7 @@ go install github.com/lukasikic/subzy@latest
 #naabu
 #libpcap
 echo "[+]installing naabu and dependencies"
-apt install -y libpcap-dev
+apt install --no-install-recommends  --no-install-suggests -y libpcap-dev
 go install github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 
 
@@ -91,7 +91,7 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 
 #installing node and dependencies
 curl -sL https://deb.nodesource.com/setup_current.x | bash
-apt install nodejs
+apt install --no-install-recommends  --no-install-suggests -y nodejs
 npm install -g puppeteer wappalyzer
 apt install --no-install-recommends --no-install-suggests chromium
 
