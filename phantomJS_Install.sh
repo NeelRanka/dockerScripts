@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 # This script install PhantomJS in your Debian/Ubuntu System
 #
 # This script must be run as root:
