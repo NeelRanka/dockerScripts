@@ -5,4 +5,4 @@ service nginx status
 
 cd ./AF1_1
 
-(bash ./run) & (python3 -m http.server -d ./Websites/)
+(python3 server.py) & (python3 -m http.server -d ./Websites/)
