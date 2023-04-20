@@ -92,6 +92,7 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 #installing node and dependencies
 curl -sL https://deb.nodesource.com/setup_current.x | bash
 apt install --no-install-recommends  --no-install-suggests -y nodejs
+npm install -g npm@9.6.5
 npm install -g puppeteer wappalyzer screenshoteer
 apt install --no-install-recommends --no-install-suggests chromium
 
