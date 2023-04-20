@@ -90,11 +90,16 @@ echo "[+] installing gau"
 go install github.com/lc/gau/v2/cmd/gau@latest
 
 #installing node and dependencies
+echo "[+] Installing Nodejs"
 curl -sL https://deb.nodesource.com/setup_current.x | bash
 apt install --no-install-recommends  --no-install-suggests -y nodejs
+echo "[+] Upgrading npm"
 npm install -g npm@9.6.5
+echo "[+] Installing puppeteer wappalyzer and screenshoteer"
 npm install -g puppeteer wappalyzer screenshoteer
+echo "[+] Installing Chromium"
 apt install --no-install-recommends --no-install-suggests chromium
+echo "[+] NodeJS part complete"
 
 
 
