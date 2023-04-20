@@ -92,15 +92,16 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 #installing node and dependencies
 echo "[+] Installing Nodejs"
 curl -sL https://deb.nodesource.com/setup_current.x | bash
-apt install --no-install-recommends  --no-install-suggests -y nodejs
+apt install --no-install-recommends --no-install-suggests -y nodejs
+echo "[+] NodeJS Version"
+node --version 
 echo "[+] Upgrading npm"
 npm install -g npm@9.6.5
-echo "[+] Installing puppeteer wappalyzer and screenshoteer"
-npm install -g puppeteer wappalyzer screenshoteer
+echo "[+] Installing puppeteer@2.1.1 wappalyzer and screenshoteer"
+npm install -g puppeteer@2.1.1 wappalyzer screenshoteer
 echo "[+] Installing Chromium"
 apt install --no-install-recommends --no-install-suggests chromium
 echo "[+] NodeJS part complete"
-
 
 
 git clone https://github.com/NeelRanka/AF1_1_API.git
@@ -109,7 +110,7 @@ echo "Done cloning AF1_1_API"
 echo $PWD
 
 #Entering Tools
-cd ./AF1_1/Tools/
+cd ./AF1_1_API/Tools/
 
 #wafw00f install  => sets to path by default
 echo "https://github.com/EnableSecurity/wafw00f.git[+] installing WafW00f"
